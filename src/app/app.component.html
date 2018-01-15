@@ -1,3 +1,29 @@
-<div>
-  <router-outlet></router-outlet>
+<div class="app-container">
+    <div class="header-bar">
+        <div class="social-link-container">
+            <div id="twitter" class="social-link">T</div>
+            <div id="github" class="social-link">G</div>
+            <div id="codepen" class="social-link">C</div>
+            <div id="linkedin" class="social-link">L</div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="title-block">
+            <div class="title-block-name">
+                <span class="firstname">Dan</span>
+                <span class="lastname">Ward</span>
+            </div>
+            <div class="title-block-job">
+                <span class="job-title">< Front End Developer /></span>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="component-container">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="menu-container">
+                <app-menu></app-menu>
+            </div>
+        </div>
+    </div>
 </div>
